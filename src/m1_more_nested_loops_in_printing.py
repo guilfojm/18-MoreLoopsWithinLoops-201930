@@ -4,17 +4,17 @@ in the context of PRINTING on the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Justin Guilfoyle.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
     """ Calls the other functions to test them. """
-    run_test_triangle_right_justified()
-    run_test_triangle_upside_down()
-    run_test_vee()
-    run_test_numbers_constant_forward()
-    run_test_numbers_constant_backwards()
+    #run_test_triangle_right_justified()
+    #run_test_triangle_upside_down()
+    #run_test_vee()
+    #run_test_numbers_constant_forward()
+    #run_test_numbers_constant_backwards()
     run_test_numbers_increasing_forward()
 
 
@@ -74,6 +74,13 @@ def triangle_right_justified(r):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
+    string = ''
+    new = ''
+    for k in range(r, 0, -1):
+        string += 'x'
+        print(string)
+        for j in range(k):
+            print(j)
 
 
 def run_test_triangle_upside_down():
@@ -169,6 +176,12 @@ def vee(r):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
+    string = ''
+    new = ''
+    for k in range(1, r+1):
+        string += str(k)
+        for j in range(r, 0, -1):
+            print(j)
 
 
 def run_test_numbers_constant_forward():
@@ -321,7 +334,10 @@ def numbers_increasing_forward(r, maxnum):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
-
+    for k in range(r):
+        print('x')
+        for i in range(maxnum):
+            print(i + 1)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
